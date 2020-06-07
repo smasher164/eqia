@@ -11,8 +11,6 @@ import (
 	pb "google.golang.org/genproto/googleapis/cloud/billing/v1"
 )
 
-// PubSubMessage is the payload of a Pub/Sub event. Please refer to the docs for
-// additional information regarding Pub/Sub events.
 type PubSubMessage struct {
 	Data []byte `json:"data"`
 }
