@@ -29,9 +29,10 @@ type BudgetMessage struct {
 
 const project = "projects/end-qualified-immunity"
 
-type Get = pb.GetProjectBillingInfoRequest
-
-type Update = pb.UpdateProjectBillingInfoRequest
+type (
+	Get    = pb.GetProjectBillingInfoRequest
+	Update = pb.UpdateProjectBillingInfoRequest
+)
 
 func StopBilling(ctx context.Context, m PubSubMessage) error {
 	var b BudgetMessage

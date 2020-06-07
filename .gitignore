@@ -6,5 +6,10 @@
 # Whitelist the following extensions
 !*.go
 !*.md
-!*.yml
+!*.json
 !.gitignore
+
+# Whitelist the following files
+!go.mod
+!go.sum
+!Dockerfile
